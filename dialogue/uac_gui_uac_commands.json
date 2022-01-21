@@ -1,0 +1,87 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "Lexus_gui_Lexus_commands",
+        "npc_name": { "rawtext": [ { "text": "§¶§bUnity AntiCheat §7[§2v2.4§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cLexus ► §5§lGUI MAIN MENU" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§l§5BASIC CMDS" } ] },
+						"commands": [
+							"/execute @s[tag=staffstatus] ~~~ dialogue open @s @s Lexus_basic_commands",
+							"/execute @s[tag=staffstatus] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5KITS" } ] },
+						"commands": [
+              "/execute @s[tag=staffstatus] ~~~ dialogue open @s @s Lexus_kit_commands",
+              "/execute @s[tag=staffstatus] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5MODULES" } ] },
+						"commands": [
+							"/execute @s[tag=staffstatus] ~~~ dialogue open @s @s toggle_module_pag1",
+							"//execute @s[tag=staffstatus] ~~~ playsound note.pling @s ~ ~ ~"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
+						"commands": [
+							"/function Lexus/test",
+							"/function Lexus/test"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§cEmpty" } ] },
+						"commands": [
+							"/function Lexus/test",
+							"function Lexus/test"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
+						"commands": [
+							"/execute @s[tag=staffstatus] ~~~ function Lexus/gui"
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			},
+			{
+				"scene_tag": "welcome_screen",
+				"npc_name": { "rawtext": [ { "text": "§¶§bUnity AntiCheat §7[§2v2.4§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§bUnity AntiCheat §7[§2v2.4§7]" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§5§lClose" } ] },
+						"commands": [
+							" "
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			},
+			{
+				"scene_tag": "manage_player",
+				"npc_name": { "rawtext": [ { "text": "" } ] },
+				"text": { "rawtext": [ { "text": "" } ] },
+				"buttons": [
+
+				],
+				"on_close_commands": [
+
+				]
+			}
+		]
+	}
+}
